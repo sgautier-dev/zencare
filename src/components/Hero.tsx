@@ -4,14 +4,14 @@ export default function Hero() {
 	return (
 		<div className="relative isolate overflow-hidden pt-14">
 			<Image
-				alt="Nos convictions, collège les Papangues"
+				alt="zencare, cuidar desde la presencia"
 				src={heroImg}
 				className="absolute inset-0 -z-10 size-full object-cover"
 				priority
 			/>
 
 			{/* Overlay */}
-			<div className="absolute inset-0 z-0 bg-white/50 dark:bg-black/50 pointer-events-none" />
+			<div className="absolute inset-0 z-0 bg-white/50 dark:bg-black/20 pointer-events-none" />
 
 			<div className="relative z-10 flex min-h-[80vh] items-start justify-center">
 				<div className="max-w-2xl pt-24 sm:pt-12">
