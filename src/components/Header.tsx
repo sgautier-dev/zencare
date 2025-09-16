@@ -7,10 +7,10 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 import logo from "@/images/logo_zencare.png"
 
 const navigation = [
-	{ name: "Product", href: "#" },
-	{ name: "Features", href: "#" },
-	{ name: "Marketplace", href: "#" },
-	{ name: "Company", href: "#" },
+	{ name: "Beneficios", href: "#" },
+	{ name: "Prácticas", href: "#" },
+	{ name: "Formación", href: "#" },
+	{ name: "Actividades", href: "#" },
 ]
 
 export default function Header() {
@@ -23,7 +23,7 @@ export default function Header() {
 				className="mx-auto flex max-w-7xl items-center justify-between p-3 lg:px-8"
 			>
 				<div className="flex flex-1">
-					<div className="hidden lg:flex lg:gap-x-12">
+					<div className="hidden lg:flex lg:gap-x-8">
 						{navigation.map((item) => (
 							<a
 								key={item.name}
@@ -58,7 +58,7 @@ export default function Header() {
 						href="#"
 						className="text-sm/6 font-semibold text-gray-900 dark:text-white"
 					>
-						Log in <span aria-hidden="true">&rarr;</span>
+						Contacto <span aria-hidden="true">&rarr;</span>
 					</a>
 				</div>
 			</nav>
@@ -93,7 +93,7 @@ export default function Header() {
 								href="#"
 								className="text-sm/6 font-semibold text-gray-900 dark:text-white"
 							>
-								Log in <span aria-hidden="true">&rarr;</span>
+								Contacto <span aria-hidden="true">&rarr;</span>
 							</a>
 						</div>
 					</div>

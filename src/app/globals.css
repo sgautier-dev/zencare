@@ -1,25 +1,29 @@
 @import "tailwindcss";
 
-/* === ZenCare Theme (Tailwind v4) === */
 @theme {
-	/* Action colors */
-	--color-primary: #fbbf24; /* Safran */
-	--color-primary-dark: #d97706; /* Safran foncé */
-	--color-secondary: #fb7185; /* Compassion */
-	--color-accent: #22d3ee; /* Cyan apaisement */
+  /* Action colors */
+  --color-primary: #fbbf24;        /* Saffron */
+  --color-primary-dark: #d97706;   /* Dark saffron */
+  --color-secondary: #fb7185;      /* Compassion rose */
+  --color-accent: #22d3ee;         /* Calm cyan */
 
-	/* Text & surface */
-	--color-bg-site: #1c1917; /* Background global */
-	--color-main: #1e293b; /* Body text */
-	--color-subtle: #334155; /* Secondary text */
-	--color-title: #0f172a; /* Headings */
+  /* Light mode */
+  --color-bg-site: #fafaf9;        /* stone-50 */
+  --color-main: #1e293b;           /* Slate-800 (body text) */
+  --color-subtle: #475569;         /* Slate-600 (secondary text) */
+  --color-title: #0f172a;          /* Slate-900 (headings) */
 
-	/* Optional complementary palette */
-	--color-lightGreen: #c4d35e;
-	--color-darkGreen: #1f432d;
-	--color-softBeige: #f7f4e9;
+  /* Fonts */
+  --font-main: var(--font-marcellus), ui-serif, Georgia, serif;
+  --font-sans: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
+}
 
-	/* Fonts */
-	--font-main: var(--font-marcellus), ui-serif, Georgia, serif;
-	--font-sans: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
+/* Dark mode overrides */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-site: #1c1917;      /* Stone-900 (deep dark) */
+    --color-main: #e5e7eb;         /* Slate-200 */
+    --color-subtle: #f1f5f9;       /* Slate-100 */
+    --color-title: #f8fafc;        /* Slate-50 */
+  }
 }
