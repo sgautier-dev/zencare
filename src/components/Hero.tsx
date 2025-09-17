@@ -2,7 +2,7 @@ import Image from "next/image"
 import heroImg from "@/images/hero.jpg"
 export default function Hero() {
 	return (
-		<div className="relative isolate overflow-hidden pt-14">
+		<div className="relative isolate overflow-hidden sm:pt-14">
 			<Image
 				alt="zencare, cuidar desde la presencia"
 				src={heroImg}
@@ -16,7 +16,7 @@ export default function Hero() {
 			<div className="relative z-10 flex min-h-[80vh] items-start justify-center">
 				<div className="max-w-3xl pt-24 sm:pt-12">
 					{/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-							<div className="relative rounded-full px-3 py-1 text-sm/6 text-subtle ring-1 ring-gray-900/10 hover:ring-gray-900/20 dark:ring-white/10 dark:hover:ring-white/20">
+							<div className="relative rounded-full px-3 py-1 text-base/6 text-subtle ring-1 ring-gray-900/10 hover:ring-gray-900/20 dark:ring-white/10 dark:hover:ring-white/20">
 								Announcing our next round of funding.{" "}
 								<a
 									href="#"
@@ -38,16 +38,26 @@ export default function Hero() {
 						<div className="mt-10 flex items-center justify-center gap-x-6">
 							<a
 								href="#"
-								className="rounded-md bg-primary-dark px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-primary-dark/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+								className="rounded-md bg-primary-dark px-3.5 py-2.5 text-sm sm:text-base font-semibold text-white shadow-xs hover:bg-primary-dark/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
 							>
-								Descubre nuestras formaciones
+								<span className="block sm:hidden">Nuestras formaciones</span>
+								<span className="hidden sm:block">
+									Descubre nuestras formaciones{" "}
+								</span>
 							</a>
 							<a
 								href="#"
-								className="text-sm/6 font-semibold text-gray-900 dark:text-white"
+								className="text-sm sm:text-base/6 font-semibold text-gray-900 dark:text-white"
 							>
-								Un proyecto de la Fundación Vivir un Buen Morir{" "}
-								<span aria-hidden="true">→</span>
+								<span className="block sm:hidden">
+									Un proyecto de la Fundación VBM{" "}
+									<span className="text-secondary" aria-hidden="true">&#10095;</span>
+								</span>
+
+								<span className="hidden sm:block">
+									Un proyecto de la Fundación Vivir un Buen Morir{" "}
+									<span className="text-secondary" aria-hidden="true">&#10095;</span>
+								</span>
 							</a>
 						</div>
 					</div>
