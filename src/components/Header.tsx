@@ -27,9 +27,7 @@ export default function Header() {
 	return (
 		<header
 			className={`sticky top-0 z-20 transition-colors duration-300 ${
-				isAtTop
-					? "bg-bg-site"
-					: "bg-bg-site-90 backdrop-blur-md supports-[backdrop-filter]:bg-bg-site-80"
+				isAtTop ? "bg-bg-site" : "bg-bg-site/80 backdrop-blur-md"
 			}`}
 		>
 			<nav
@@ -42,7 +40,7 @@ export default function Header() {
 							<a
 								key={item.name}
 								href={item.href}
-								className="text-sm/6 sm:text-base/6 font-semibold text-gray-900 dark:text-white"
+								className="text-sm/6 sm:text-base/6 font-semibold"
 							>
 								{item.name}
 							</a>
@@ -52,7 +50,7 @@ export default function Header() {
 						<button
 							type="button"
 							onClick={() => setMobileMenuOpen(true)}
-							className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-gray-400 dark:hover:text-white"
+							className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 "
 						>
 							<span className="sr-only">Open main menu</span>
 							<Bars3Icon aria-hidden="true" className="size-6" />
@@ -70,7 +68,7 @@ export default function Header() {
 				<div className="flex flex-1 justify-end">
 					<a
 						href="#"
-						className="text-sm/6 sm:text-base/6 font-semibold text-gray-900 dark:text-white"
+						className="text-sm/6 sm:text-base/6 font-semibold"
 					>
 						Contacto{" "}
 						<span className="text-secondary" aria-hidden="true">
@@ -85,13 +83,13 @@ export default function Header() {
 				className="lg:hidden"
 			>
 				<div className="fixed inset-0 z-10" />
-				<DialogPanel className="fixed inset-y-0 left-0 z-10 w-full overflow-y-auto bg-white px-4 py-3 dark:bg-gray-900">
+				<DialogPanel className="fixed inset-y-0 left-0 z-10 w-full overflow-y-auto bg-bg-site px-4 py-3">
 					<div className="flex items-center justify-between">
 						<div className="flex flex-1">
 							<button
 								type="button"
 								onClick={() => setMobileMenuOpen(false)}
-								className="-m-2.5 rounded-md p-2.5 text-gray-700 dark:text-gray-400 dark:hover:text-white"
+								className="-m-2.5 rounded-md p-2.5"
 							>
 								<span className="sr-only">Close menu</span>
 								<XMarkIcon aria-hidden="true" className="size-6" />
@@ -108,7 +106,7 @@ export default function Header() {
 						<div className="flex flex-1 justify-end">
 							<a
 								href="#"
-								className="text-sm/6 sm:text-base/6 font-semibold text-gray-900 dark:text-white"
+								className="text-sm/6 sm:text-base/6 font-semibold"
 							>
 								Contacto{" "}
 								<span className="text-secondary" aria-hidden="true">
@@ -122,7 +120,7 @@ export default function Header() {
 							<a
 								key={item.name}
 								href={item.href}
-								className="-mx-3 block rounded-lg px-3 py-2 text-sm/7 sm:text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5"
+								className="-mx-3 block rounded-lg px-3 py-2 text-sm/7 sm:text-base/7 font-semibold hover:bg-gray-100 dark:hover:bg-white/5"
 							>
 								{item.name}
 							</a>
