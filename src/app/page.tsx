@@ -1,6 +1,7 @@
 import Benefits from "@/components/Benefits"
 import Header from "@/components/Header"
 import Hero from "@/components/Hero"
+import Practices from "@/components/Practices"
 import Whatis from "@/components/Whatis"
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
 			<Hero />
 			<Whatis />
 			<Benefits />
+			<Practices/>
 		</main>
 	)
 }

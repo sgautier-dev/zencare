@@ -1,12 +1,21 @@
 import Image from "next/image"
 import heroImg from "@/images/hero.jpg"
+import heroImgDark from "@/images/hero_dark.jpg"
 export default function Hero() {
 	return (
 		<div className="relative isolate overflow-hidden sm:pt-14">
 			<Image
 				alt="zencare, cuidar desde la presencia"
 				src={heroImg}
-				className="absolute inset-0 -z-10 size-full object-cover"
+				className="absolute inset-0 -z-10 size-full object-cover block dark:hidden"
+				priority
+			/>
+
+			{/* image for dark mode */}
+			<Image
+				alt="zencare, cuidar desde la presencia"
+				src={heroImgDark}
+				className="absolute inset-0 -z-10 size-full object-cover hidden dark:block"
 				priority
 			/>
 
@@ -51,12 +60,16 @@ export default function Hero() {
 							>
 								<span className="block sm:hidden">
 									Un proyecto de la Fundación VBM{" "}
-									<span className="text-secondary" aria-hidden="true">&#10095;</span>
+									<span className="text-secondary" aria-hidden="true">
+										&#10095;
+									</span>
 								</span>
 
 								<span className="hidden sm:block">
 									Un proyecto de la Fundación Vivir un Buen Morir{" "}
-									<span className="text-secondary" aria-hidden="true">&#10095;</span>
+									<span className="text-secondary" aria-hidden="true">
+										&#10095;
+									</span>
 								</span>
 							</a>
 						</div>
