@@ -84,7 +84,7 @@ export default function Practices() {
 						<Image
 							alt="zencare, cuidar desde la presencia"
 							src={practiceImg}
-							className="w-full max-w-xl rounded-2xl shadow-sm"
+							className="w-full max-w-xl rounded-2xl"
 							priority
 						/>
 					</div>
