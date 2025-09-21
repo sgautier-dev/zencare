@@ -23,7 +23,7 @@ export default function Hero() {
 			<div className="absolute inset-0 z-0 bg-bg-site/50 dark:bg-black/40 pointer-events-none" />
 
 			<div className="relative z-10 flex min-h-[80vh] items-start justify-center">
-				<div className="max-w-3xl pt-24 sm:pt-12">
+				<div className="max-w-3xl pt-12 sm:pt-12">
 					{/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
 							<div className="relative rounded-full px-3 py-1 text-base/6 text-subtle ring-1 ring-gray-900/10 hover:ring-gray-900/20 dark:ring-white/10 dark:hover:ring-white/20">
 								Announcing our next round of funding.{" "}
@@ -55,7 +55,9 @@ export default function Hero() {
 								</span>
 							</a>
 							<a
-								href="#"
+								href="https://vivirunbuenmorir.es/"
+								target="_blank"
+								rel="noopener noreferrer"
 								className="text-sm sm:text-base/6 font-semibold text-gray-900 dark:text-white"
 							>
 								<span className="block sm:hidden">
