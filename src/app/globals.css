@@ -1,29 +1,53 @@
 @import "tailwindcss";
 
 @theme {
-  /* Action colors */
-  --color-primary: #fbbf24;        /* Saffron */
-  --color-primary-dark: #d97706;   /* Dark saffron */
-  --color-secondary: #fb7185;      /* Compassion rose */
-  --color-accent: #22d3ee;         /* Calm cyan */
+	/* Action colors */
+	--color-primary: #fbbf24; /* Saffron */
+	--color-primary-dark: #d97706; /* Dark saffron */
+	--color-secondary: #fb7185; /* Compassion rose */
+	--color-accent: #22d3ee; /* Calm cyan */
 
-  /* Light mode */
-  --color-bg-site: #fafaf9;        /* stone-50 */
-  --color-main: #1e293b;           /* Slate-800 (body text) */
-  --color-subtle: #475569;         /* Slate-600 (secondary text) */
-  --color-title: #0f172a;          /* Slate-900 (headings) */
+	/* Light mode */
+	--color-bg-site: #fafaf9; /* stone-50 */
+	--color-main: #1e293b; /* Slate-800 (body text) */
+	--color-subtle: #475569; /* Slate-600 (secondary text) */
+	--color-title: #0f172a; /* Slate-900 (headings) */
 
-  /* Fonts */
-  --font-main: var(--font-marcellus), ui-serif, Georgia, serif;
-  --font-sans: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
+	/* Fonts */
+	--font-main: var(--font-marcellus), ui-serif, Georgia, serif;
+	--font-sans: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
 }
 
 /* Dark mode overrides */
 @media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg-site: #1c1917;      /* Stone-900 (deep dark) */
-    --color-main: #e5e7eb;         /* Slate-200 */
-    --color-subtle: #f1f5f9;       /* Slate-100 */
-    --color-title: #f8fafc;        /* Slate-50 */
-  }
+	:root {
+		--color-bg-site: #1c1917; /* Stone-900 (deep dark) */
+		--color-main: #e5e7eb; /* Slate-200 */
+		--color-subtle: #f1f5f9; /* Slate-100 */
+		--color-title: #f8fafc; /* Slate-50 */
+	}
+}
+
+/* === Scroll offset for anchored sections === */
+[id] {
+	scroll-margin-top: 12rem;
+}
+
+/* === Smooth scroll for anchor navigation === */
+html {
+	scroll-behavior: smooth;
+}
+
+/* === Custom animations === */
+@keyframes appear {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@utility animate-appear {
+	animation: appear 1s ease-in-out;
 }

@@ -1,5 +1,6 @@
 import Activities from "@/components/Activities"
 import Benefits from "@/components/Benefits"
+import Contact from "@/components/Contact"
 import Header from "@/components/Header"
 import Hero from "@/components/Hero"
 import Practices from "@/components/Practices"
@@ -14,6 +15,7 @@ export default function Home() {
 			<Benefits />
 			<Practices />
 			<Activities />
+			<Contact />
 		</main>
 	)
 }

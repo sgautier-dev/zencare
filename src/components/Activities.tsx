@@ -2,13 +2,13 @@
 import Image from "next/image"
 import talleresImg from "@/images/talleres.jpeg"
 import bienestarImg from "@/images/bienestar.jpg"
-import zazenImg from "@/images/zazen.jpg"
-import retirosImg from "@/images/retiros.jpg"
+import zazenImg from "@/images/mar-zazen.jpg"
+import retirosImg from "@/images/retiros.jpeg"
 import onlineImg from "@/images/online.jpg"
 
 export default function Activities() {
 	return (
-		<section className="mt-32 sm:mt-56">
+		<section className="mt-32 sm:mt-56" id="activities">
 			<div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
 				{/* Heading */}
 				<p className="text-sm font-semibold tracking-wide text-primary">
