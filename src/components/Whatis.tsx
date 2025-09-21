@@ -18,7 +18,7 @@ export default function Whatis() {
 								</a>
 							</div>
 						</div> */}
-						<h2 className="mt-24 text-4xl font-main font-semibold tracking-tight text-pretty sm:mt-10 sm:text-5xl">
+						<h2 className="text-4xl font-main font-semibold tracking-tight text-pretty sm:text-5xl">
 							¿Qué es ZenCare?
 						</h2>
 						<p className="mt-8 text-lg font-medium text-pretty sm:text-xl/8">
