@@ -6,7 +6,7 @@ import contactImg from "@/images/contact.jpg"
 
 export default function Contact() {
   return (
-    <section className="relative mt-32 sm:mt-56">
+    <section className="relative mt-32 sm:mt-56" id="contact">
       {/* Side image (right on lg+) */}
       <div className="lg:absolute lg:inset-0 lg:left-1/2">
         <Image

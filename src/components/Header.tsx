@@ -66,10 +66,7 @@ export default function Header() {
 					/>
 				</a>
 				<div className="flex flex-1 justify-end">
-					<a
-						href="#"
-						className="text-sm/6 sm:text-base/6 font-semibold"
-					>
+					<a href="#contact" className="text-sm/6 sm:text-base/6 font-semibold">
 						Contacto{" "}
 						<span className="text-secondary" aria-hidden="true">
 							&#10095;
@@ -95,7 +92,11 @@ export default function Header() {
 								<XMarkIcon aria-hidden="true" className="size-6" />
 							</button>
 						</div>
-						<a href="/" className="-m-1.5 p-1.5">
+						<a
+							href="/"
+							className="-m-1.5 p-1.5"
+							onClick={() => setMobileMenuOpen(false)}
+						>
 							<span className="sr-only">ZenCare</span>
 							<Image
 								alt="logo, zencare"
@@ -105,8 +106,9 @@ export default function Header() {
 						</a>
 						<div className="flex flex-1 justify-end">
 							<a
-								href="#"
+								href="#contact"
 								className="text-sm/6 sm:text-base/6 font-semibold"
+								onClick={() => setMobileMenuOpen(false)}
 							>
 								Contacto{" "}
 								<span className="text-secondary" aria-hidden="true">
@@ -120,6 +122,7 @@ export default function Header() {
 							<a
 								key={item.name}
 								href={item.href}
+								onClick={() => setMobileMenuOpen(false)}
 								className="-mx-3 block rounded-lg px-3 py-2 text-sm/7 sm:text-base/7 font-semibold hover:bg-gray-100 dark:hover:bg-white/5"
 							>
 								{item.name}
