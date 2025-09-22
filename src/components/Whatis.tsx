@@ -29,11 +29,12 @@ export default function Whatis() {
 							acompañamiento compasivo.
 						</p>
 						<p className="mt-8 text-lg font-medium text-pretty sm:text-xl/8">
-							En lugar de centrarnos únicamente en el alivio físico (para ello
-							ya está la medicina paliativa), ZenCare integra el bienestar
-							psicoemocional y espiritual, proporcionando un ambiente de calma
-							donde el Ser de la persona puede encontrar serenidad en los
-							tiempos de la culminación de la vida.
+							En lugar de centrarnos en lo que se ocupa la medicina paliativa,
+							ZenCare integra el bienestar psicoemocional y espiritual,
+							aportando un entrenamiento destinado a crear una atmósfera de
+							serenidad para el paciente y un soporte de práctica espiritual y
+							acompañamiento compasivo para el cuidador (sea profesional,
+							familiar o voluntario).
 						</p>
 						<p className="mt-8 text-lg font-medium text-pretty sm:text-xl/8">
 							El Zen nos enseña a estar presentes en el aquí y ahora, a aceptar
@@ -58,7 +59,7 @@ export default function Whatis() {
 				</div>
 				<div className="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0">
 					<Image
-						alt="zencare, cuidar desde la presencia"
+						alt="Qué es ZenCare"
 						src={whatisImg}
 						className="aspect-3/2 w-full object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"
 					/>

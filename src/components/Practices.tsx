@@ -1,38 +1,19 @@
 import Image from "next/image"
-import { HeartIcon, ShieldCheckIcon } from "@heroicons/react/24/outline"
 import practiceImg from "@/images/zen.png"
 
-type Feature = {
-	name: string
-	points: string[]
-	icon: React.ComponentType<{ className?: string }>
-	colorClass?: string
-}
-
-const features: Feature[] = [
-	{
-		name: "Para los pacientes.",
-		points: [
-			"Crear un entorno de calma y aceptación, reduciendo el miedo y la ansiedad.",
-			"Conectar con su ser interior y encontrar paz en la transición.",
-			"Aceptar el presente sin juicio, facilitando una despedida más consciente.",
-		],
-		icon: HeartIcon,
-		colorClass: "text-secondary",
-	},
-	{
-		name: "Para los cuidadores.",
-		points: [
-			"Estar plenamente presentes desde la serenidad y la escucha compasiva.",
-			"Reducir el agotamiento emocional mediante prácticas breves y sostenibles.",
-			"Fortalecer el vínculo y la calidad del acompañamiento.",
-		],
-		icon: ShieldCheckIcon,
-		colorClass: "text-accent",
-	},
-]
-
 export default function Practices() {
+	const recursos = [
+		"Meditación en la quietud silenciosa",
+		"Mindfulness",
+		"Rituales de cuidado consciente",
+		"Escucha compasiva",
+		"Respiración y consciencia corporal",
+		"Pausas de calma interior",
+		"Artes creativas",
+		"Música",
+		"Terapias manuales",
+	]
+
 	return (
 		<section className="overflow-hidden mt-32 sm:mt-56" id="practices">
 			<div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -41,48 +22,30 @@ export default function Practices() {
 					<div className="lg:ml-auto lg:pt-4 lg:pl-4">
 						<div className="lg:max-w-lg">
 							<p className="text-sm font-semibold tracking-wide text-primary">
-								Meditación y Mindfulness
+								ZenCare
 							</p>
 							<h2 className="mt-2 text-4xl sm:text-5xl font-main tracking-tight text-title">
-								Herramientas para el Fin de la Vida
+								Recursos principales
 							</h2>
 							<p className="mt-6 text-lg/8 text-subtle">
-								La práctica de la meditación en la quietud silenciosa y el
-								mindfulness son elementos centrales en ZenCare. Estas
-								herramientas ayudan a pacientes y cuidadores a cultivar calma,
-								aceptación y presencia plena ante la experiencia del final de la
-								vida.
+								Herramientas sencillas y prácticas que cultivamos en ZenCare
+								para acompañar con serenidad, compasión y presencia plena.
 							</p>
 
-							<dl className="mt-10 max-w-xl space-y-8 text-base/7 text-main lg:max-w-none">
-								{features.map((feature) => (
-									<div key={feature.name} className="relative pl-10">
-										<dt className="font-semibold text-title">
-											<feature.icon
-												aria-hidden="true"
-												className={`absolute top-1 left-0 size-6 ${
-													feature.colorClass ?? "text-primary"
-												}`}
-											/>
-											{feature.name}
-										</dt>
-										<dd className="mt-3">
-											<ul className="list-disc pl-5 space-y-2 text-subtle">
-												{feature.points.map((line, i) => (
-													<li key={i}>{line}</li>
-												))}
-											</ul>
-										</dd>
-									</div>
+							<ul className="mt-10 max-w-xl space-y-3 text-base/7 text-main lg:max-w-none list-disc pl-6">
+								{recursos.map((item, i) => (
+									<li key={i} className="text-subtle">
+										{item}
+									</li>
 								))}
-							</dl>
+							</ul>
 						</div>
 					</div>
 
 					{/* Image */}
 					<div className="flex items-start justify-end lg:order-first">
 						<Image
-							alt="zencare, cuidar desde la presencia"
+							alt="zencare, recursos principales"
 							src={practiceImg}
 							className="w-full max-w-xl rounded-2xl"
 							priority

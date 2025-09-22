@@ -13,6 +13,11 @@
 	--color-subtle: #475569; /* Slate-600 (secondary text) */
 	--color-title: #0f172a; /* Slate-900 (headings) */
 
+	/* Optional palette (light) */
+	--color-lightGreen: #c4d35e; /* Verde resiliencia */
+	--color-darkGreen: #1f432d; /* Verde profundo */
+	--color-softBeige: #f7f4e9; /* Neutro cálido */
+
 	/* Fonts */
 	--font-main: var(--font-marcellus), ui-serif, Georgia, serif;
 	--font-sans: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
@@ -25,6 +30,11 @@
 		--color-main: #e5e7eb; /* Slate-200 */
 		--color-subtle: #f1f5f9; /* Slate-100 */
 		--color-title: #f8fafc; /* Slate-50 */
+
+		/* Optional palette (dark) */
+		--color-lightGreen: #a5b84b; /* Verde más apagado */
+		--color-darkGreen: #355d46; /* Verde profundo atenuado */
+		--color-softBeige: #2a2721; /* Beige cálido oscuro */
 	}
 }
 
