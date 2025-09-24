@@ -20,7 +20,9 @@ export default function Activities() {
 				</h2>
 				<p className="mt-4 max-w-3xl text-subtle">
 					En ZenCare ofrecemos actividades y espacios de formación diseñados
-					para profesionales, familiares y voluntarios.
+					para cultivar la atención consciente, la compasión y el cuidado
+					contemplativo, tanto para profesionales como para familiares y
+					voluntarios.
 				</p>
 
 				{/* Bento grid */}
@@ -42,9 +44,16 @@ export default function Activities() {
 									Programas formativos acreditados
 								</p>
 								<ul className="mt-2 max-w-xl list-disc pl-5 text-base/6 text-subtle space-y-1.5">
-									<li>Presenciales en Zaragoza y online.</li>
-									<li>Curso inicial online (5 sesiones + material escrito).</li>
-									<li>Formación específica para profesionales sanitarios.</li>
+									<li>Programas presenciales y Online en directo.</li>
+									<li>
+										Formación específica para profesionales sanitarios en
+										entidades asistenciales.
+									</li>
+									<li>Talleres formativos para jóvenes estudiantes.</li>
+									<li>Talleres de lectura y de cine-coloquio.</li>
+									<li>
+										Talleres de escucha, counselling para el acompañamiento.
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -65,14 +74,19 @@ export default function Activities() {
 									Meditación y prácticas regulares
 								</h3>
 								<p className="mt-2 text-lg font-medium tracking-tight text-title">
-									Espacios de mindfulness y autocuidado
+									Espacio para la práctica y las enseñanzas de diversas
+									tradiciones de sabiduría
 								</p>
 								<ul className="mt-2 max-w-xl list-disc pl-5 text-base/6 text-subtle space-y-1.5">
 									<li>
 										Sesiones semanales de meditación zen (martes, jueves,
 										sábados).
 									</li>
-									<li>Respiración consciente y silencio contemplativo.</li>
+									<li>
+										Sesiones de enseñanzas y coloquio, con diferentes enseñantes
+										(un sábado al mes).
+									</li>
+									<li>Sesiones de mindfulness.</li>
 								</ul>
 							</div>
 						</div>
@@ -96,8 +110,9 @@ export default function Activities() {
 									Autocuidado y reducción del estrés
 								</p>
 								<ul className="mt-2 max-w-xl list-disc pl-5 text-base/6 text-subtle space-y-1.5">
-									<li>Taichi, chikung, mindfulness corporal.</li>
-									<li>Masajes y prácticas somáticas.</li>
+									<li>Taichi, chikung, yoga.</li>
+									<li>Masajes y terapias manuales.</li>
+									<li>Relajación y musicoterapia pasiva.</li>
 								</ul>
 							</div>
 						</div>
@@ -118,12 +133,10 @@ export default function Activities() {
 									Retiros y convivencias
 								</h3>
 								<p className="mt-2 text-lg font-medium tracking-tight text-title">
-									Experiencias intensivas de práctica contemplativa
+									Experiencias intensivas de prácticas contemplativas
 								</p>
 								<ul className="mt-2 max-w-xl list-disc pl-5 text-base/6 text-subtle space-y-1.5">
-									<li>
-										Retiros contemplativos intensivos (ej. abril y noviembre).
-									</li>
+									<li>Retiros intensivos trimestrales.</li>
 									<li>
 										Convivencias de fin de semana para voluntariado y
 										profesionales.
@@ -151,6 +164,7 @@ export default function Activities() {
 									Contenidos para integrar ZenCare en el día a día
 								</p>
 								<ul className="mt-2 max-w-xl list-disc pl-5 text-base/6 text-subtle space-y-1.5">
+									<li>Curso inicial online (5 semanas + material escrito).</li>
 									<li>Guías prácticas, meditaciones guiadas, artículos.</li>
 									<li>Acceso online a contenidos formativos.</li>
 								</ul>
@@ -161,20 +175,20 @@ export default function Activities() {
 				</div>
 
 				{/* CTA calendario */}
-				<div className="mt-10 sm:mt-16 flex justify-center">
+				{/* <div className="mt-10 sm:mt-16 flex justify-center">
 					<a
 						href="/docs/fechas-vbm-2026.pdf"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="inline-flex items-center rounded-md bg-primary-dark px-5 py-2.5 text-sm font-semibold text-white
-                       hover:bg-primary-dark/80  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                       hover:bg-primary-dark/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
 					>
 						Ver calendario completo 2026
 						<span aria-hidden="true" className="ml-2">
 							›
 						</span>
 					</a>
-				</div>
+				</div> */}
 			</div>
 		</section>
 	)
