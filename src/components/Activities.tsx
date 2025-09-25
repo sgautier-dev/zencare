@@ -189,6 +189,14 @@ export default function Activities() {
 						</span>
 					</a>
 				</div> */}
+				<div className="mt-10 sm:mt-16 flex justify-center">
+					<div className="rounded-md bg-primary-light/20 px-6 py-4 text-center">
+						<p className="text-lg font-semibold text-primary-dark">
+							📅 El calendario completo de actividades 2026 estará disponible
+							próximamente
+						</p>
+					</div>
+				</div>
 			</div>
 		</section>
 	)
