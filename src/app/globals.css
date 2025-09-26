@@ -38,6 +38,15 @@
 	}
 }
 
+/* === Selection colors (global) === */
+@layer base {
+  ::selection { @apply bg-primary-dark text-white; }
+  @media (prefers-color-scheme: dark) {
+    ::selection { @apply bg-primary text-black; }
+  }
+}
+
+
 /* === Scroll offset for anchored sections === */
 [id] {
 	scroll-margin-top: 12rem;
