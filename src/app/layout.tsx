@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { Marcellus, Nunito_Sans } from "next/font/google"
 import "./globals.css"
+import BackToTop from "@/components/BackToTop"
 
 const marcellus = Marcellus({
 	subsets: ["latin"],
@@ -56,6 +57,7 @@ export default function RootLayout({
 		<html lang="es" className={`${marcellus.variable} ${nunito.variable}`}>
 			<body className="bg-bg-site text-main font-sans antialiased">
 				{children}
+				<BackToTop />
 			</body>
 		</html>
 	)

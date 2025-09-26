@@ -200,7 +200,7 @@ export default function Contact() {
 							<div className="mt-10 flex justify-end border-t border-black/5 pt-8 dark:border-white/10">
 								<button
 									type="submit"
-									className="rounded-md bg-primary-dark px-3.5 py-2.5 text-sm sm:text-base font-semibold text-white shadow-xs hover:bg-primary-dark/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+									className="rounded-md bg-primary px-3.5 py-2.5 text-sm sm:text-base font-semibold text-black shadow-xs hover:bg-primary-dark/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
 								>
 									{isExecuting ? (
 										<Loader2 className="h-5 w-5 animate-spin" />

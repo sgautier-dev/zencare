@@ -47,7 +47,7 @@ export default function Hero() {
 						<div className="mt-10 flex items-center justify-center gap-x-6">
 							<a
 								href="#activities"
-								className="rounded-md bg-primary-dark px-3.5 py-2.5 text-sm sm:text-base font-semibold text-white shadow-xs hover:bg-primary-dark/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+								className="rounded-md bg-primary px-3.5 py-2.5 text-sm sm:text-base font-semibold text-black shadow-xs hover:bg-primary-dark/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
 							>
 								<span className="block sm:hidden">Nuestras formaciones</span>
 								<span className="hidden sm:block">
