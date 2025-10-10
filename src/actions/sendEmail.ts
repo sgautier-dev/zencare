@@ -14,6 +14,7 @@ const schema = z.object({
 	email: z.email({ message: "Dirección de correo electrónico no válida." }),
 	phone: z.string().optional(),
 	message: z.string().min(1, { message: "El mensaje es obligatorio." }),
+	contact_info: z.string().optional(),
 })
 
 const sendEmail = actionClient
@@ -21,27 +22,33 @@ const sendEmail = actionClient
 		handleValidationErrorsShape: async (ve) =>
 			flattenValidationErrors(ve).fieldErrors,
 	})
-	.action(async ({ parsedInput: { name, email, phone, message } }) => {
-		//throw new Error ('test')
+	.action(
+		async ({ parsedInput: { name, email, phone, message, contact_info } }) => {
+			//throw new Error ('test')
 
-		await checkArcJetProtection()
+			if (contact_info && contact_info.trim() !== "") {
+				throw new Error("Bot detected (honeypot).")
+			}
 
-		await resend.emails.send({
-			from: "ZenCare Contacto <contacto@zencare.es>", // onboarding@resend.dev for resend temp address
-			to: ["contacto@zencare.es"],
-			replyTo: email as string,
-			subject: `Mensaje de ${name}`,
-			react: React.createElement(EmailTemplate, {
-				name: name as string,
-				senderEmail: email as string,
-				phone: phone as string,
-				message: message as string,
-			}),
-		})
+			await checkArcJetProtection()
 
-		return {
-			message: "Su mensaje se ha enviado correctamente.",
+			await resend.emails.send({
+				from: "ZenCare Contacto <contacto@zencare.es>", // onboarding@resend.dev for resend temp address
+				to: ["contacto@zencare.es"],
+				replyTo: email as string,
+				subject: `Mensaje de ${name}`,
+				react: React.createElement(EmailTemplate, {
+					name: name as string,
+					senderEmail: email as string,
+					phone: phone as string,
+					message: message as string,
+				}),
+			})
+
+			return {
+				message: "Su mensaje se ha enviado correctamente.",
+			}
 		}
-	})
+	)
 
 export default sendEmail
