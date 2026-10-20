@@ -1,26 +1,22 @@
 import Image from "next/image"
-import heroImg from "@/images/hero.jpg"
-import heroImgDark from "@/images/hero_dark.jpg"
+// Genuine photograph by panpan ma (@mymphoebe), Unsplash License.
+// https://unsplash.com/photos/KTRd6tbdi68
+const heroGardenPhoto =
+	"https://images.unsplash.com/photo-1769506551162-f56c343f0642?auto=format&fit=crop&q=85&w=3000"
 export default function Hero() {
 	return (
 		<div className="relative isolate overflow-hidden sm:pt-14">
 			<Image
-				alt="zencare, cuidar desde la presencia"
-				src={heroImg}
-				className="absolute inset-0 -z-10 size-full object-cover block dark:hidden"
+				alt="Dos personas sentadas en una terraza contemplan un jardín japonés."
+				src={heroGardenPhoto}
+				fill
+				sizes="100vw"
 				priority
+				className="-z-10 object-cover object-[80%_62%] md:object-[center_60%]"
 			/>
 
-			{/* image for dark mode */}
-			<Image
-				alt="zencare, cuidar desde la presencia"
-				src={heroImgDark}
-				className="absolute inset-0 -z-10 size-full object-cover hidden dark:block"
-				priority
-			/>
-
-			{/* Overlay */}
-			<div className="absolute inset-0 z-0 bg-bg-site/50 dark:bg-black/40 pointer-events-none" />
+			{/* Light and dark overlays keep hero text legible over the same photograph. */}
+			<div className="pointer-events-none absolute inset-0 z-0 bg-linear-to-b from-bg-site/85 via-bg-site/60 to-bg-site/25 dark:from-black/80 dark:via-black/55 dark:to-black/35" />
 
 			<div className="relative z-10 flex min-h-[80vh] items-start justify-center">
 				<div className="max-w-3xl pt-12 sm:pt-12">
