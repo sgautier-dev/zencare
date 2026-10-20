@@ -284,7 +284,11 @@ export default function Activities() {
 								rel="noopener noreferrer"
 								className="inline-flex items-center rounded-md border border-primary-dark px-5 py-3 font-semibold text-title hover:bg-primary/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-dark dark:focus-visible:outline-primary"
 							>
-								Consultar cuotas de Miembro VBM ↗
+								<span className="sm:hidden">Cuotas VBM</span>
+								<span className="hidden sm:inline">
+									Consultar cuotas de Miembro VBM
+								</span>
+								<span aria-hidden="true"> ↗</span>
 							</a>
 							<a
 								href="#contact"
