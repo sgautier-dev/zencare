@@ -79,14 +79,14 @@ export default function Activities() {
 								</p>
 								<ul className="mt-2 max-w-xl list-disc pl-5 text-base/6 text-subtle space-y-1.5">
 									<li>
-										Sesiones semanales de meditación zen (martes, jueves,
-										sábados).
+										Práctica presencial y por Zoom: lunes, miércoles y jueves
+										a las 20:00; sábados a las 9:00.
 									</li>
 									<li>
-										Sesiones de enseñanzas y coloquio, con diferentes enseñantes
-										(un sábado al mes).
+										Curso inicial online de cinco sesiones antes de incorporarse
+										al grupo.
 									</li>
-									<li>Sesiones de mindfulness.</li>
+									<li>Retiros intensivos ZenCare programados para 2027.</li>
 								</ul>
 							</div>
 						</div>
@@ -164,7 +164,9 @@ export default function Activities() {
 									Contenidos para integrar ZenCare en el día a día
 								</p>
 								<ul className="mt-2 max-w-xl list-disc pl-5 text-base/6 text-subtle space-y-1.5">
-									<li>Curso inicial online (5 semanas + material escrito).</li>
+									<li>
+										Curso inicial online (cinco sesiones + material escrito).
+									</li>
 									<li>Guías prácticas, meditaciones guiadas, artículos.</li>
 									<li>Acceso online a contenidos formativos.</li>
 								</ul>
@@ -174,27 +176,124 @@ export default function Activities() {
 					</div>
 				</div>
 
-				{/* CTA calendario */}
-				{/* <div className="mt-10 sm:mt-16 flex justify-center">
-					<a
-						href="/docs/fechas-vbm-2026.pdf"
-						target="_blank"
-						rel="noopener noreferrer"
-						className="inline-flex items-center rounded-md bg-primary-dark px-5 py-2.5 text-sm font-semibold text-white
-                       hover:bg-primary-dark/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-					>
-						Ver calendario completo 2026
-						<span aria-hidden="true" className="ml-2">
-							›
-						</span>
-					</a>
-				</div> */}
-				<div className="mt-10 sm:mt-16 flex justify-center">
-					<div className="rounded-md bg-primary-light/20 px-6 py-4 text-center">
-						<p className="text-lg font-semibold text-primary-dark">
-							📅 El calendario completo de actividades 2026 estará disponible
-							próximamente
+				{/* Meditation schedule, retreats, and participation details */}
+				<div
+					id="meditacion-zencare"
+					className="mt-12 rounded-3xl bg-white px-6 py-10 shadow-sm ring-1 ring-black/5 dark:bg-stone-900 dark:ring-white/10 sm:mt-16 sm:px-10"
+				>
+					<h3 className="text-3xl font-main font-semibold text-title sm:text-4xl">
+						Grupo de meditación VBM · ZenCare
+					</h3>
+					<p className="mt-5 max-w-4xl text-lg/8 text-subtle">
+						La meditación es un espacio de práctica y aprendizaje para
+						desarrollar una presencia más consciente y compasiva. A través
+						del silencio, la atención y las enseñanzas contemplativas,
+						cultivamos recursos para el autocuidado y para acompañar a otras
+						personas, especialmente en situaciones de vulnerabilidad. El
+						grupo está abierto tanto a quienes desean iniciarse como a
+						quienes buscan continuidad en su práctica, de acuerdo con las
+						condiciones de participación vigentes.
+					</p>
+
+					<div className="mt-10 grid gap-x-12 gap-y-10 md:grid-cols-2">
+						<section aria-labelledby="meditacion-horarios">
+							<h4
+								id="meditacion-horarios"
+								className="text-xl font-semibold text-title"
+							>
+								Meditación semanal
+							</h4>
+							<p className="mt-3 text-subtle">
+								Práctica presencial y online por Zoom.
+							</p>
+							<ul className="mt-3 list-disc space-y-2 pl-5 text-subtle">
+								<li>Lunes, miércoles y jueves a las 20:00.</li>
+								<li>Sábados a las 9:00.</li>
+							</ul>
+						</section>
+
+						<section aria-labelledby="meditacion-iniciacion">
+							<h4
+								id="meditacion-iniciacion"
+								className="text-xl font-semibold text-title"
+							>
+								Curso inicial de meditación
+							</h4>
+							<p className="mt-3 text-subtle">
+								Cinco sesiones online de enseñanzas y práctica, necesarias
+								antes de incorporarse a la meditación semanal.
+							</p>
+							<p className="mt-3 font-semibold text-title">
+								Aportación del ciclo: 95 €.
+							</p>
+						</section>
+
+						<section aria-labelledby="meditacion-retiros">
+							<h4
+								id="meditacion-retiros"
+								className="text-xl font-semibold text-title"
+							>
+								Retiros de meditación ZenCare 2027
+							</h4>
+							<ol className="mt-3 list-decimal space-y-2 pl-5 text-subtle">
+								<li>9–10 de enero de 2027.</li>
+								<li>3–4 de abril de 2027.</li>
+								<li>24–25 de septiembre de 2027.</li>
+								<li>4–5 de diciembre de 2027.</li>
+							</ol>
+							<p className="mt-3 text-sm text-subtle">
+								Confirmar el lugar, la modalidad y las horas concretas
+								de llegada y salida al solicitar cada inscripción.
+							</p>
+						</section>
+
+						<section aria-labelledby="meditacion-condiciones">
+							<h4
+								id="meditacion-condiciones"
+								className="text-xl font-semibold text-title"
+							>
+								Condiciones y aportaciones
+							</h4>
+							<p className="mt-3 text-subtle">
+								Para la práctica semanal se requiere haber realizado el
+								curso inicial y tener la condición de Miembro VBM.
+							</p>
+							<ul className="mt-3 list-disc space-y-2 pl-5 text-subtle">
+								<li>Miembro VBM: 180 € al año o 15 € al mes.</li>
+								<li>Meditación por Zoom: 10 € al mes.</li>
+								<li>Meditación presencial: 20 € al mes.</li>
+							</ul>
+							<p className="mt-3 text-sm text-subtle">
+								Para la meditación por Zoom, conectarse diez minutos antes
+								del comienzo de la sesión.
+							</p>
+						</section>
+					</div>
+
+					<div className="mt-10 border-t border-black/10 pt-7 dark:border-white/10">
+						<p className="max-w-3xl text-subtle">
+							Las inscripciones, las modalidades de aportación y los pagos
+							se confirman directamente con la Fundación. El sistema de
+							reserva online todavía no está habilitado para ZenCare.
 						</p>
+						<div className="mt-5 flex flex-wrap gap-4">
+							<a
+								href="https://vivirunbuenmorir.es/colabora/"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="inline-flex items-center rounded-md border border-primary-dark px-5 py-3 font-semibold text-title hover:bg-primary/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-dark dark:focus-visible:outline-primary"
+							>
+								Conocer la adhesión VBM ↗
+							</a>
+							<a
+								href="https://vivirunbuenmorir.es/contacto/"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="inline-flex items-center rounded-md bg-primary px-5 py-3 font-semibold text-black hover:bg-primary-dark/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-dark dark:focus-visible:outline-primary"
+							>
+								Solicitar inscripción ↗
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>

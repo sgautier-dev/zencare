@@ -68,7 +68,10 @@ export default function Header() {
 				<div className="flex flex-1 justify-end">
 					<a href="#contact" className="text-sm/6 sm:text-base/6 font-semibold">
 						Contacto{" "}
-						<span className="text-secondary hidden sm:inline" aria-hidden="true">
+						<span
+							className="text-secondary hidden sm:inline"
+							aria-hidden="true"
+						>
 							&#10095;
 						</span>
 					</a>
@@ -111,7 +114,10 @@ export default function Header() {
 								onClick={() => setMobileMenuOpen(false)}
 							>
 								Contacto{" "}
-								<span className="text-secondary hidden sm:inline" aria-hidden="true">
+								<span
+									className="text-secondary hidden sm:inline"
+									aria-hidden="true"
+								>
 									&#10095;
 								</span>
 							</a>
