@@ -8,7 +8,7 @@ import onlineImg from "@/images/online.jpg"
 
 export default function Activities() {
 	return (
-		<section className="mt-32 sm:mt-56" id="activities">
+		<section className="mt-32 scroll-mt-36 sm:mt-56 sm:scroll-mt-44" id="activities">
 			<div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
 				{/* Heading */}
 				<p className="text-sm font-semibold tracking-wide text-primary">
@@ -179,7 +179,7 @@ export default function Activities() {
 				{/* Meditation schedule, retreats, and participation details */}
 				<div
 					id="meditacion-zencare"
-					className="mt-12 rounded-3xl bg-white px-6 py-10 shadow-sm ring-1 ring-black/5 dark:bg-stone-900 dark:ring-white/10 sm:mt-16 sm:px-10"
+					className="mt-12 scroll-mt-36 rounded-3xl bg-white px-6 py-10 shadow-sm ring-1 ring-black/5 dark:bg-stone-900 dark:ring-white/10 sm:mt-16 sm:scroll-mt-44 sm:px-10"
 				>
 					<h3 className="text-3xl font-main font-semibold text-title sm:text-4xl">
 						Grupo de meditación VBM · ZenCare
@@ -272,9 +272,10 @@ export default function Activities() {
 
 					<div className="mt-10 border-t border-black/10 pt-7 dark:border-white/10">
 						<p className="max-w-3xl text-subtle">
-							Las inscripciones, las modalidades de aportación y los pagos
-							se confirman directamente con la Fundación. El sistema de
-							reserva online todavía no está habilitado para ZenCare.
+							Puedes solicitar información e inscripción mediante el formulario de
+							contacto de ZenCare. La Fundación confirmará personalmente la
+							disponibilidad y las condiciones de pago. Esta consulta no
+							reserva automáticamente una plaza.
 						</p>
 						<div className="mt-5 flex flex-wrap gap-4">
 							<a
@@ -283,15 +284,13 @@ export default function Activities() {
 								rel="noopener noreferrer"
 								className="inline-flex items-center rounded-md border border-primary-dark px-5 py-3 font-semibold text-title hover:bg-primary/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-dark dark:focus-visible:outline-primary"
 							>
-								Conocer la adhesión VBM ↗
+								Consultar cuotas de Miembro VBM ↗
 							</a>
 							<a
-								href="https://vivirunbuenmorir.es/contacto/"
-								target="_blank"
-								rel="noopener noreferrer"
+								href="#contact"
 								className="inline-flex items-center rounded-md bg-primary px-5 py-3 font-semibold text-black hover:bg-primary-dark/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-dark dark:focus-visible:outline-primary"
 							>
-								Solicitar inscripción ↗
+								Solicitar inscripción
 							</a>
 						</div>
 					</div>

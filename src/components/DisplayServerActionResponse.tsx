@@ -20,6 +20,7 @@ const fieldLabels: Record<string, string> = {
 	email: "Email",
 	phone: "Teléfono",
 	message: "Mensaje",
+	consent: "Privacidad",
 }
 
 export function DisplayServerActionResponse({ result }: Props) {

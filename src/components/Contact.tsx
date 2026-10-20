@@ -36,7 +36,7 @@ export default function Contact() {
 		const fd = new FormData(formRef.current!)
 		const contact_info = (fd.get("contact_info") as string) || ""
 
-		execute({ ...formData, contact_info })
+		execute({ ...formData, contact_info, consent: fd.get("consent") === "on" })
 	}
 
 	useEffect(() => {
@@ -53,7 +53,7 @@ export default function Contact() {
 		}
 	}, [isExecuting, result])
 	return (
-		<section className="relative mt-32 sm:mt-56" id="contact">
+		<section className="relative mt-32 scroll-mt-36 sm:mt-56 sm:scroll-mt-44" id="contact">
 			{/* Side image (right on lg+) */}
 			<div className="lg:absolute lg:inset-0 lg:left-1/2">
 				<Image
@@ -71,8 +71,10 @@ export default function Contact() {
 							Contacto
 						</h2>
 						<p className="mt-2 text-lg/8 text-subtle">
-							¿Tienes dudas sobre nuestras formaciones o actividades? Escríbenos
-							y te respondemos pronto.
+							¿Te interesa el grupo de meditación, el curso inicial o un retiro?
+							Indica la actividad y modalidad que buscas. También puedes
+							escribirnos para otras consultas. Enviar este formulario no
+							confirma una plaza.
 						</p>
 
 						<form onSubmit={handleSubmit} ref={formRef} className="mt-12">
@@ -91,6 +93,7 @@ export default function Contact() {
 											name="name"
 											type="text"
 											autoComplete="name"
+											maxLength={120}
 											value={formData.name}
 											onChange={handleChange}
 											required
@@ -114,6 +117,7 @@ export default function Contact() {
 											name="email"
 											type="email"
 											autoComplete="email"
+											maxLength={254}
 											value={formData.email}
 											onChange={handleChange}
 											required
@@ -142,6 +146,7 @@ export default function Contact() {
 											name="phone"
 											type="tel"
 											autoComplete="tel"
+											maxLength={50}
 											value={formData.phone}
 											onChange={handleChange}
 											aria-describedby="phone-description"
@@ -180,25 +185,37 @@ export default function Contact() {
 									</div>
 								</div>
 
-								{/* Consentimiento */}
-								{/* <div className="sm:col-span-2">
-                  <label className="flex items-start gap-3 text-sm/6 text-subtle">
-                    <input
-                      id="consent"
-                      name="consent"
-                      type="checkbox"
-                      required
-                      className="mt-1 size-4 rounded border border-gray-300 text-primary-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-dark dark:border-white/10"
-                    />
-                    <span>
-                      Acepto que ZenCare utilice mis datos para responder a mi consulta.{" "}
-                      <a href="/privacy" className="underline decoration-primary-dark hover:opacity-80">
-                        Política de privacidad
-                      </a>
-                      .
-                    </span>
-                  </label>
-                </div> */}
+								{/* Personal-data notice and explicit consent */}
+								<div className="sm:col-span-2 space-y-3 text-sm/6 text-subtle">
+									<p>
+										Responsable: Fundación Vivir un Buen Morir. Los datos se
+										utilizan para responder a tu consulta. Por favor, no
+										incluyas información clínica ni datos de salud sensibles.
+										Puedes consultar la{" "}
+										<a
+											href="https://vivirunbuenmorir.es/aviso-legal-y-politica-de-privacidad/"
+											target="_blank"
+											rel="noopener noreferrer"
+											className="underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+										>
+											información de privacidad de la Fundación
+										</a>
+										.
+									</p>
+									<label className="flex items-start gap-3">
+										<input
+											id="consent"
+											name="consent"
+											type="checkbox"
+											required
+											className="mt-1 size-4 shrink-0 accent-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+										/>
+										<span>
+											He leído la información de privacidad y acepto el tratamiento
+											de mis datos para responder a esta consulta.
+										</span>
+									</label>
+								</div>
 							</div>
 
 							{/* Honeypot anti-bot */}

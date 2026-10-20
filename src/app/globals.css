@@ -48,8 +48,10 @@
 
 
 /* === Scroll offset for anchored sections === */
-[id] {
-	scroll-margin-top: 12rem;
+@layer base {
+	[id] {
+		scroll-margin-top: 12rem;
+	}
 }
 
 /* === Smooth scroll for anchor navigation === */
